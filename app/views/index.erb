@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Recipes</title>
+  </head>
+  <body>
+    <h1>Recipes</h1>
+      <%@recipes.each do |recipe|%>
+      <h2><%=recipe.name%></h2>
+        <h3>Ingredients</h1>
+          <p><%=recipe.ingredients%></p>
+        <h3>Cook Time</h3>
+          <p><%=recipe.cook_time%></p>
+        <h3>Recipe Link</h3>
+          <a href="http://localhost:9393/recipes/<%=recipe.id%>">Click Here</a>
+      <%end%>
+  </body>
+</html>
